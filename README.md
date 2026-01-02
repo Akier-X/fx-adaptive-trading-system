@@ -4,6 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Validation](https://github.com/Akier-X/fx-adaptive-trading-system/actions/workflows/validate.yml/badge.svg)](https://github.com/Akier-X/fx-adaptive-trading-system/actions/workflows/validate.yml)
 [![精度](https://img.shields.io/badge/Accuracy-93.64%25-brightgreen)](https://github.com/Akier-X/fx-adaptive-trading-system)
 
 ---
