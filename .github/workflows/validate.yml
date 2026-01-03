@@ -83,3 +83,29 @@ jobs:
       with:
         name: validation-report
         path: validation_report.md
+
+    - name: Install evaluation dependencies
+      run: |
+        pip install matplotlib numpy
+
+    - name: Generate comprehensive evaluation
+      run: |
+        python .github/scripts/generate_evaluation.py
+
+    - name: Upload evaluation graphs
+      uses: actions/upload-artifact@v3
+      with:
+        name: evaluation-graphs
+        path: evaluation_output/system_performance.png
+
+    - name: Upload evaluation summary
+      uses: actions/upload-artifact@v3
+      with:
+        name: evaluation-summary
+        path: evaluation_output/summary.json
+
+    - name: Upload evaluation report
+      uses: actions/upload-artifact@v3
+      with:
+        name: evaluation-report
+        path: evaluation_output/EVALUATION_REPORT.md
